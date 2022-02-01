@@ -1,0 +1,104 @@
+body {
+  background: #191931;
+}
+
+.moon {
+  border-radius: 50%;
+  float: right;
+ 
+  margin: 10% 30%;
+  width: 110px;
+  height: 110px;
+  box-shadow: 15px 15px 0 0 white;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 75px;
+  left: 50px;
+
+  animation-name: moveRocket;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes moveRocket {
+  to {transform: translate(1200px, -570px) rotate(55deg);
+
+  }
+}
+
+
+.ground {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  
+  height: 75px;
+  background: rgb(15, 88, 15);
+  border-top: 2px dotted rgb(121, 187, 23);
+}
+
+.rocket-tip {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  margin-left: 30px;
+  
+  border-bottom: 20px solid gray;
+}
+
+.rocket-middle {
+  width: 30px;
+  height: 50px;
+  
+  background: white;
+}
+
+.rocket-base {
+  width: 40px;
+  height: 20px;
+  margin-left: 25px;
+  
+  background: rgb(41, 38, 38);
+}
+
+.rocket-left-wing {
+  border-left: 20px solid transparent;
+  margin-top: 20px;
+  margin-left: 10px;
+  
+  border-bottom: 20px solid rgb(172, 0, 0);
+}
+
+.rocket-right-wing {
+  border-right: 20px solid transparent;
+  margin-top: 20px;
+  
+  border-bottom: 20px solid rgb(172, 0, 0);
+}
+
+
+
+
+
+
+
+/* ⚠️rules you don't want to mess with...⚠️  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+}
+
+.rocket-body {
+  display: flex;
+} 
